@@ -4,8 +4,8 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        MotorCore © {year} – Sistema de gestión de reparación y repuestos para
-        motocicletas
+        PhoneRepair © {year} – Sistema de gestión de reparación y repuestos para
+        celulares
       </p>
       <small>Proyecto académico | Frontend con React</small>
     </footer>

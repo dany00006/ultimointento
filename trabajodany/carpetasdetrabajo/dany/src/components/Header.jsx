@@ -1,27 +1,25 @@
 import { useState } from "react";
-import logo from "../assets/logo2.png";
 
 function Header() {
   const [search, setSearch] = useState("");
 
   const user = {
-    name: "Andres Hunk",
+    name: "Daniel Alejandro Rodriguez Carrillo",
     role: "Administrador",
   };
 
   return (
     <header className="header">
       <div className="brand">
-        <img src={logo} alt="Logo MotorCore" className="logo" />
         <h1 className="brand-title">
-          Motor<span className="brand-core">Core</span>
+          Phone<span className="brand-core">Repair</span>
         </h1>
       </div>
 
       <div className="search-box">
         <input
           type="text"
-          placeholder="Buscar motos, repuestos o reparaciones..."
+          placeholder="Buscar celulares, repuestos o reparaciones..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

@@ -9,7 +9,7 @@ function Sidebar() {
 
   return (
     <aside className="sidebar">
-      <p className="sidebar-title">Área Admin</p>
+      <p className="sidebar-title">Gestión de Celulares</p>
 
       <nav className="sidebar-nav">
         <ul>
