@@ -59,7 +59,7 @@ function Dashboard() {
       </p>
 
       {/* Estadísticas Principales */}
-      <div className="dashboard-section">
+      <section className="dashboard-section">
         <h3>Estadísticas Generales</h3>
         <div className="stats-grid">
           {stats.map((stat) => (
@@ -69,10 +69,10 @@ function Dashboard() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Gráfica de Tendencia */}
-      <div className="dashboard-section">
+      <section className="dashboard-section">
         <h3>Tendencia de Reparaciones</h3>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={repairTrend}>
@@ -90,12 +90,12 @@ function Dashboard() {
             />
           </LineChart>
         </ResponsiveContainer>
-      </div>
+      </section>
 
       {/* Gráficas de Estado y Modelos */}
       <div className="dashboard-charts-row">
         {/* Gráfica de Pastel - Estado de Reparaciones */}
-        <div className="dashboard-section chart-section">
+        <section className="dashboard-section chart-section">
           <h3>Estado de Reparaciones</h3>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
@@ -116,10 +116,10 @@ function Dashboard() {
               <Tooltip />
             </PieChart>
           </ResponsiveContainer>
-        </div>
+        </section>
 
         {/* Gráfica de Barras - Modelos Populares */}
-        <div className="dashboard-section chart-section">
+        <section className="dashboard-section chart-section">
           <h3>Celulares Más Reparados</h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={popularModels}>
@@ -130,11 +130,11 @@ function Dashboard() {
               <Bar dataKey="repairs" fill="#c81d25" />
             </BarChart>
           </ResponsiveContainer>
-        </div>
+        </section>
       </div>
 
       {/* Acciones Rápidas */}
-      <div className="dashboard-section">
+      <section className="dashboard-section">
         <h3>Acciones Rápidas</h3>
         <div className="quick-actions">
           <button className="action-btn">+ Nueva Reparación</button>
@@ -142,7 +142,7 @@ function Dashboard() {
           <button className="action-btn">+ Nuevo Cliente</button>
           <button className="action-btn">Ver Reportes</button>
         </div>
-      </div>
+      </section>
     </section>
   );
 }
